@@ -1,6 +1,6 @@
 # Mina Ayman Gad — Product Engineering Case Studies
 
-![Mina Ayman portfolio preview](https://minaayman-portfolio.netlify.app/og-image.svg)
+![Mina Ayman portfolio preview](https://minaayman-portfolio.netlify.app/og-image.png)
 
 Selected case studies from production Flutter projects I have owned end-to-end.
 

@@ -1,8 +1,12 @@
 # Storix — Warehouse & Retail Inventory Case Study
 
+![Storix preview](https://minaayman-portfolio.netlify.app/images/storix.png)
+
 Storix is a cross-platform inventory and warehouse-management product for retail businesses. It focuses on daily stock operations: products, quantities, movement tracking, suppliers, reporting, barcode flows, and operational visibility.
 
 I owned the product as an end-to-end Flutter/Product Engineer: architecture, implementation, data layer decisions, UI workflows, local database behavior, Supabase integration, reporting/export flows, and production polish.
+
+[Portfolio case](https://minaayman-portfolio.netlify.app/#/en/work) · [Live app](https://storix-app.netlify.app/)
 
 ---
 
@@ -71,7 +75,7 @@ flowchart TD
   State --> Features[Inventory features]
   Features --> LocalDB[Drift / SQLite]
   Features --> Remote[Supabase / API layer]
-  Features --> Barcode[Barcode scan & labels]
+  Features --> Barcode[Barcode scan and labels]
   Features --> Reports[Charts, PDF, printing, Excel]
 ```
 
@@ -103,6 +107,18 @@ Storix is useful as portfolio evidence because it shows product engineering beyo
 - end-to-end ownership.
 
 That combination matters for businesses because the product has to support daily work, not just look good in a screenshot.
+
+---
+
+## What to ask me about this project
+
+Useful discussion areas:
+
+- why I chose a local database layer for inventory workflows;
+- how barcode workflows reduce operational friction;
+- how PDF/printing/Excel changed the product from app UI into business software;
+- where Supabase fits in the operational model;
+- what I would instrument next to measure stock-flow speed more accurately.
 
 ---
 

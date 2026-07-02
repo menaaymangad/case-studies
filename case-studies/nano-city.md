@@ -1,8 +1,12 @@
 # Nano City — Marketplace Mobile App Case Study
 
+![Nano City preview](https://minaayman-portfolio.netlify.app/images/nanocity.png)
+
 Nano City is a mobile marketplace app for product discovery and shopping flows. The work focused on improving high-traffic product browsing, integrating backend APIs, and polishing the customer-facing mobile experience.
 
 Unlike SANOUKA or Storix, this case study intentionally stays higher-level because the public-safe evidence is the delivered app experience and portfolio notes rather than an open source repository.
+
+[Portfolio case](https://minaayman-portfolio.netlify.app/#/en/work) · [Play Store](https://play.google.com/store/apps/details?id=com.nanocityeg.customers&pcampaignid=web_share)
 
 ---
 
@@ -74,9 +78,14 @@ For my portfolio, it supports the broader story: I can improve existing products
 
 ---
 
-## Links
+## What to ask me about this project
 
-- [Nano City on Google Play](https://play.google.com/store/apps/details?id=com.nanocityeg.customers&pcampaignid=web_share)
+Useful discussion areas:
+
+- how I diagnose slow list screens;
+- how I handle loading/empty/error states in API-backed Flutter UI;
+- what I changed to make product browsing feel smoother;
+- how I would instrument marketplace performance more precisely next time.
 
 ---
 

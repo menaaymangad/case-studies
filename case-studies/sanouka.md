@@ -1,8 +1,12 @@
 # SANOUKA — Public Transit & Navigation Case Study
 
+![SANOUKA preview](https://minaayman-portfolio.netlify.app/images/sanouka.png)
+
 SANOUKA is a public transit and navigation app for Abidjan, Côte d'Ivoire. It helps commuters search for routes, understand available transport options, view stops, and navigate through the city using public transport, walking segments, and offline map support.
 
 I owned the project end-to-end as a solo Flutter/Product Engineer: app architecture, Flutter implementation, map experience, route search, authentication, GTFS integration, API integration, performance tuning, release work, and ongoing technical decisions.
+
+[Portfolio case](https://minaayman-portfolio.netlify.app/#/en/work) · [App Store](https://apps.apple.com/sa/app/sanouka/id6756220634?l=ar) · [Play Store](https://play.google.com/store/apps/details?id=com.sanouka.app)
 
 ---
 
@@ -16,7 +20,7 @@ I owned the project end-to-end as a solo Flutter/Product Engineer: app architect
 | Platforms | Android, iOS work, Flutter app architecture |
 | Core stack | Flutter, Dart, Firebase Auth, OpenStreetMap, GTFS, OpenTripPlanner, Cloud Run, Redis, MBTiles |
 | Main challenge | Make complex transit routing fast, reliable, and usable on mobile |
-| Key result | Route planning improved from roughly 2 minutes to under 10 seconds in common cases |
+| Key result | Route planning improved from roughly 2 minutes to 6–10 seconds in common cases |
 
 ---
 
@@ -135,57 +139,15 @@ This is the kind of tradeoff I care about in production work: not just making so
 
 ---
 
-## Offline maps
+## What to ask me about this project
 
-SANOUKA also included offline map support using raster MBTiles.
+If this comes up in an interview, useful discussion areas are:
 
-The app bundles Abidjan offline map tiles and copies them into app storage when needed. This improves the experience for users with limited or unstable connectivity.
-
-The offline map workflow included:
-
-- generating map tiles for a defined Abidjan bounding box;
-- bundling the MBTiles asset with the Flutter app;
-- copying the large asset safely to internal storage;
-- serving tiles through a local MBTiles provider;
-- integrating offline tiles into the map UI.
-
----
-
-## Reliability and fallbacks
-
-The app used multiple fallback layers because transit/navigation products cannot depend on a single happy path.
-
-Examples:
-
-- **Geocoding fallback:** OpenStreetMap Nominatim first, then Photon and Maps.co when needed.
-- **Routing fallback:** OpenTripPlanner route planning, with local GTFS-backed behavior where useful.
-- **Walking route support:** OSRM used for walking segments and geometry.
-- **Offline access:** local GTFS and offline map tiles reduce dependency on live network availability.
-
----
-
-## Engineering highlights
-
-- Built a production Flutter app around real public-transport data.
-- Integrated OpenTripPlanner 2.7 route planning with GTFS data.
-- Added Redis caching to reduce route calculation latency and repeated backend work.
-- Improved common route-search time from roughly 120 seconds to 6–10 seconds.
-- Supported 635 routes, 7,251 stops, 29 agencies, and 1,304 scheduled trips per day.
-- Added offline raster maps with MBTiles and local app storage management.
-- Implemented Firebase authentication, email verification, and password recovery flows.
-- Used Clean Architecture, Bloc/Cubit, and dependency injection for maintainable feature modules.
-- Built multi-provider geocoding fallbacks for better reliability.
-- Added performance monitoring for startup, navigation, memory, and network behavior.
-
----
-
-## What I learned
-
-This project taught me that the most important engineering work is often hidden from the UI.
-
-A route card may look simple, but behind it there is data validation, GTFS parsing, OTP behavior, network reliability, map rendering, caching, infrastructure cost, and user patience.
-
-SANOUKA pushed me to think less like a screen builder and more like a product engineer responsible for the full experience.
+- how GTFS and OpenTripPlanner fit together;
+- why Redis helped route-search latency;
+- how I approached Cloud Run speed/cost tradeoffs;
+- how offline MBTiles changed the user experience;
+- what I would measure more carefully if I restarted the project today.
 
 ---
 

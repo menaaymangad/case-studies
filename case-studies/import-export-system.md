@@ -1,8 +1,12 @@
 # Import & Export System — Desktop Operations Case Study
 
+![Import & Export System preview](https://minaayman-portfolio.netlify.app/images/import-export.png)
+
 The Import & Export System is a Flutter Desktop product for a trading/shipment company. It supports offline internal operations, records management, document workflows, and day-to-day business tasks that need reliability more than flashy UI.
 
 I worked on the system as an end-to-end Flutter engineer, focusing on stabilizing workflows, improving database behavior, and making the product more useful for daily desktop operations.
+
+[Portfolio case](https://minaayman-portfolio.netlify.app/#/en/work)
 
 ---
 
@@ -61,7 +65,7 @@ flowchart TD
   UI[Flutter Desktop UI] --> State[Bloc / Provider]
   State --> Services[Business services]
   Services --> DB[SQLite / FFI]
-  Services --> Docs[PDF preview, printing]
+  Services --> Docs[PDF preview and printing]
   Services --> Excel[Excel import/export]
   Services --> Tables[Operational data tables]
   Services --> Charts[Charts and reporting]
@@ -107,6 +111,18 @@ This case study is important because desktop business software exposes different
 - workflow simplification.
 
 It shows that I can build tools people use to run a business, not only public app-store experiences.
+
+---
+
+## What to ask me about this project
+
+Useful discussion areas:
+
+- how I approach offline-first desktop software;
+- how I structure dense table-heavy screens;
+- how SQLite/FFI changes Flutter Desktop behavior;
+- how document generation and exports shape real business workflows;
+- how I would measure retrieval speed more formally next time.
 
 ---
 

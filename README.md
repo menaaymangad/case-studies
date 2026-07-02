@@ -27,10 +27,10 @@ My strongest work sits around practical products: maps, transport routing, offli
 
 | Case study | Product type | Highlights |
 | --- | --- | --- |
-| [SANOUKA](case-studies/sanouka.md) | Public transit & navigation app | Route planning, GTFS, OpenTripPlanner, Redis caching, Cloud Run optimization, offline maps, Firebase Auth. Route search improved from roughly 2 minutes to under 10 seconds in common cases. |
-| Storix | Warehouse management system | Cross-platform inventory workflows, stock movement tracking, scalable architecture for 100K+ records. Coming next. |
-| Import & Export System | Desktop management system | Offline-first desktop operations, SQLite optimization, role-based workflows. Coming next. |
-| Nano City | Marketplace mobile app | REST API integration, product listing performance, shopping-flow UI improvements. Coming next. |
+| [SANOUKA](case-studies/sanouka.md) | Public transit & navigation app | Route planning, GTFS, OpenTripPlanner, Redis caching, Cloud Run optimization, offline maps, Firebase Auth. Route search improved from roughly 2 minutes to 6–10 seconds in common cases. |
+| [Storix](case-studies/storix.md) | Warehouse and retail inventory system | Flutter product for stock movement, barcode workflows, local database, Supabase-backed operations, reporting, printing, and 100K+ inventory-record capacity. |
+| [Import & Export System](case-studies/import-export-system.md) | Desktop operations system | Offline-first Flutter Desktop system with SQLite/FFI, Excel/PDF workflows, operational tables, role-based usage, and faster internal record handling. |
+| [Nano City](case-studies/nano-city.md) | Marketplace mobile app | Product listing performance, REST API integration, Firebase, shopping-flow UI refinement, and Play Store delivery. |
 
 ---
 
@@ -52,10 +52,11 @@ Instead of exposing private source code, these case studies show the parts that 
 
 - Flutter mobile, web, and desktop delivery.
 - Clean Architecture, Bloc/Cubit, Riverpod, Provider, GetIt.
-- Firebase Auth, Firestore, Supabase, REST APIs, SQLite.
+- Firebase Auth, Firestore, Supabase, REST APIs, SQLite/Drift.
 - Maps, geolocation, GTFS, OpenTripPlanner, OSRM, MBTiles.
 - Offline-first product behavior and resilient fallbacks.
 - Performance monitoring, caching, and production debugging.
+- Business workflows: stock movement, reporting, printing, imports, exports, and role-based access.
 
 ---
 
